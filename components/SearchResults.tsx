@@ -43,15 +43,6 @@ export const SearchResults = ({ results }: SearchResultsProps) => {
         rowCount={results.length}
         rowRenderer={rowRenderer}
       />
-      {results.map(product => {
-        return (
-          <ProductItem
-            key={product.id}
-            product={product}
-            onAddToWishList={onAddToWishlist}
-          />
-        )
-      })}
     </div>
   )
 }
